@@ -24,6 +24,15 @@ export const works = [
     tags: ['線上訂位', '菜單展示', '品牌氛圍'],
   },
   {
+    name: '初色 Hatsu Nail Atelier',
+    type: '美甲工作室 + 線上預約',
+    location: '台北大安',
+    url: 'https://nail-reservation-a.web.app',
+    shot: 'nail',
+    summary: '預約制美甲工作室。安靜的米白配色搭配大幅甲片照片，價目、本季款式與美甲師介紹一目了然。客人可以指定美甲師即時預約，也能自己查詢或取消，店家有專屬後台管理時段。',
+    tags: ['線上即時預約', '指定美甲師', '店家後台'],
+  },
+  {
     name: '靜所 Still Studio',
     type: '皮拉提斯教室 + 線上預約',
     location: '台北大安',
