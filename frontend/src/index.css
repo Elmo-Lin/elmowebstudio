@@ -1,0 +1,60 @@
+:root {
+  --bg: #f9f8f4;
+  --bg-2: #efece3;
+  --ink: #1f2a22;
+  --ink-2: #5a6359;
+  --ink-3: #9a9f94;
+  --line: #e3e0d5;
+
+  --accent: #2f5d3a;
+  --accent-hover: #234a2d;
+  --accent-soft: #dfe9df;
+  --pop: #b89a6a;
+  --pop-ink: #6e5530;
+  --pop-soft: #f1e8d8;
+
+  --sans: 'Inter', 'Noto Sans TC', 'PingFang TC', system-ui, sans-serif;
+
+  font: 16px/1.75 var(--sans);
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
