@@ -1,21 +1,27 @@
 :root {
-  --bg: #f9f8f4;
-  --bg-2: #efece3;
-  --ink: #1f2a22;
-  --ink-2: #5a6359;
-  --ink-3: #9a9f94;
-  --line: #e3e0d5;
+  /* 安靜的暖米白外框，讓作品截圖本身的顏色跳出來 */
+  --bg: #f8f5f0;
+  --bg-2: #f0eae1;
+  --card: #fffdf9;
+  --ink: #2f2620;
+  --ink-2: #6b5f55;
+  --ink-3: #a39689;
+  --line: #e4dcd1;
 
-  --accent: #2f5d3a;
-  --accent-hover: #234a2d;
-  --accent-soft: #dfe9df;
-  --pop: #b89a6a;
-  --pop-ink: #6e5530;
-  --pop-soft: #f1e8d8;
+  --clay: #9a7350;
+  --clay-soft: #efe4d6;
 
-  --sans: 'Inter', 'Noto Sans TC', 'PingFang TC', system-ui, sans-serif;
+  --dark: #2a221d;
+  --on-dark: #f3ece3;
+  --on-dark-2: #b8aa9b;
+  --on-dark-line: rgba(243, 236, 227, 0.16);
+  --clay-light: #d1ad86;
 
-  font: 16px/1.75 var(--sans);
+  --serif: 'Noto Serif TC', 'Songti TC', serif;
+  --latin: 'Cormorant Garamond', 'Noto Serif TC', serif;
+  --sans: 'Noto Sans TC', 'PingFang TC', system-ui, sans-serif;
+
+  font: 16px/1.85 var(--sans);
   color: var(--ink);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
@@ -30,7 +36,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 64px;
+  scroll-padding-top: 72px;
 }
 
 body {
@@ -41,9 +47,10 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 600;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
+  font-family: var(--serif);
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: 0.04em;
   margin: 0;
 }
 

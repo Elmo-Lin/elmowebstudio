@@ -10,49 +10,75 @@ export const site = {
   lineUrl: '', // 例如 'https://line.me/ti/p/~yourid'，留空就不顯示 LINE 按鈕
 }
 
+// 作品依排列順序顯示，第一個最顯眼，建議放最滿意的作品
+// shot 對應 public/works/{shot}-desktop.jpg 與 {shot}-mobile.jpg 兩張截圖
+// 概念作品（非真實客戶）請加上 concept: true，會標示「概念作品」
 export const works = [
-  // 暫時隱藏，要恢復時取消註解即可
-  // {
-  //   name: '1000cc coffee & cookie',
-  //   type: '咖啡廳形象網站',
-  //   location: '桃園中壢',
-  //   url: 'https://cccafe-a52e2.web.app',
-  //   summary: '木格窗邊的小咖啡廳。用照片與溫暖的排版呈現店內氛圍，營業時間、地址與寵物友善資訊一眼就能看到。',
-  //   tags: ['形象網站', '菜單展示', 'Google 地圖'],
-  // },
+  {
+    name: '霧夜 Nafu cafe',
+    type: '咖啡廳 + 線上訂位',
+    location: '桃園',
+    url: 'https://nafucafe-a.web.app',
+    shot: 'nafu',
+    summary: '在霧裡，替夜晚留一盞燈。用暗色調與手寫字還原店裡夜晚的氛圍，菜單、毛孩須知、營業時間整理清楚，看完就能直接線上訂位。',
+    tags: ['線上訂位', '菜單展示', '品牌氛圍'],
+  },
+  {
+    name: '靜所 Still Studio',
+    type: '皮拉提斯教室 + 線上預約',
+    location: '台北大安',
+    url: 'https://pilates-reservation-a.web.app',
+    shot: 'still',
+    summary: '精品皮拉提斯教室。Reformer、墊上、產前與私人課程分類清楚，搭配預約系統，留住每一位想上課的客人。',
+    tags: ['線上預約', '品牌形象', '課表'],
+  },
   {
     name: 'June Cakee',
     type: '甜點工作室網站',
     location: '中壢平鎮',
     url: 'https://junecakee.com',
-    summary: '鮮奶油蛋糕、巴斯克的甜點工作室。商品一覽清楚好逛，看完直接透過 LINE 預訂，並綁定專屬網域。',
+    shot: 'june',
+    summary: '鮮奶油蛋糕、巴斯克的甜點工作室。手繪感的插畫與溫暖配色，商品一覽清楚好逛，看完直接透過 LINE 預訂，並綁定專屬網域。',
     tags: ['商品展示', 'LINE 預訂', '自有網域'],
   },
   {
     name: '即動 ACTION GYM',
     type: '健身工作室 + 線上預約',
-    location: '小班制私人教練',
-    url: 'https://gymactiongym.web.app/',
-    summary: '1 對 1、1 對 2、1 對 3 私人教練課程。學員可以直接在網站上預約每週固定時段，減少來回訊息。',
+    location: '楊梅',
+    url: 'https://gymactiongym.web.app',
+    shot: 'gym',
+    summary: '1 對 1、1 對 2 小班制私人教練課程。學員可以直接在網站上預約每週固定時段，減少來回訊息。',
     tags: ['線上預約', '課程介紹', '會員時段'],
   },
-  // 暫時隱藏，要恢復時取消註解即可
-  // {
-  //   name: 'Still Studio',
-  //   type: '皮拉提斯教室 + 線上預約',
-  //   location: 'Pilates & Movement',
-  //   url: 'https://pilates-reservation-a.web.app',
-  //   summary: '精品皮拉提斯教室。Reformer、墊上與私人課程分類清楚，搭配預約系統，留住每一位想上課的客人。',
-  //   tags: ['線上預約', '品牌形象', '課表'],
-  // },
   {
     name: '里昂影像 Leon Photography',
     type: '攝影師作品集網站',
     location: '人像・婚禮・商業攝影',
     url: 'https://leonphotography.web.app',
-    summary: '以作品為主角的攝影師網站。人像、婚禮、親子、商業等六大分類相簿，點開即可全螢幕瀏覽，方案價格清楚，看完直接私訊預約檔期。',
+    shot: 'leon',
+    summary: '以作品為主角的攝影師網站。六大分類相簿點開即可全螢幕瀏覽，方案價格清楚，看完直接私訊預約檔期。',
     tags: ['作品集相簿', '全螢幕燈箱', '方案價目'],
   },
+  // 尚未上線，上線後取消註解即可
+  // {
+  //   name: '新月 LUNE Pilates',
+  //   type: '器械皮拉提斯教室',
+  //   location: '台北大安',
+  //   url: 'https://lunepilates.web.app',
+  //   shot: 'lune',
+  //   summary: '柔和的奶茶色搭配月亮意象，呈現器械皮拉提斯的安靜與平衡。課程、器械、團課課表與場地租借分類清楚，從一堂體驗課開始預約。',
+  //   tags: ['體驗課預約', '團課課表', '場地租借'],
+  // },
+  // 暫時隱藏，要恢復時取消註解並補上截圖
+  // {
+  //   name: '1000cc coffee & cookie',
+  //   type: '咖啡廳形象網站',
+  //   location: '桃園中壢',
+  //   url: 'https://cccafe-a52e2.web.app',
+  //   shot: 'cccafe',
+  //   summary: '木格窗邊的小咖啡廳。用照片與溫暖的排版呈現店內氛圍，營業時間、地址與寵物友善資訊一眼就能看到。',
+  //   tags: ['形象網站', '菜單展示', 'Google 地圖'],
+  // },
 ]
 
 export const services = [
