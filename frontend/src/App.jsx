@@ -70,9 +70,9 @@ function Hero() {
       <div className="container hero-inner">
         <p className="eyebrow">Web Design for Local Shops</p>
         <h1>
-          幫在地小店，
+          幫在地小店
           <br />
-          做一個<span className="nowrap"><em>會幫你接生意</em>的網站。</span>
+          做一個<span className="nowrap"><em>會幫你接生意</em>的網站</span>
         </h1>
         <p className="hero-lead">
           咖啡廳、甜點店、皮拉提斯、健身工作室——從形象網站到線上預約系統，<br />
