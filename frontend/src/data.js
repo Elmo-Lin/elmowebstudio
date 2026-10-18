@@ -51,12 +51,12 @@ export const works = [
     tags: ['線上即時預約', '指定美甲師', '店家後台'],
   },
   {
-    name: '靜所 Still Studio',
+    name: 'Core Align Pilates Studio',
     type: '皮拉提斯教室 + 線上預約',
     location: '台北大安',
     url: 'https://pilates-reservation-a.web.app',
-    shot: 'still',
-    summary: '精品皮拉提斯教室。Reformer、墊上、產前與私人課程分類清楚，搭配預約系統，留住每一位想上課的客人。',
+    shot: 'corealign',
+    summary: '每班最多 8 人的器械皮拉提斯小班教室。Reformer、墊上、產前與私人課程分類清楚，搭配預約系統，留住每一位想上課的客人。',
     tags: ['線上預約', '品牌形象', '課表'],
   },
   {
