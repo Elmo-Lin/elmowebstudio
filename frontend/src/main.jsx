@@ -1,10 +1,18 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot, hydrateRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
+const container = document.getElementById('root')
+const app = (
   <StrictMode>
     <App />
-  </StrictMode>,
+  </StrictMode>
 )
+
+// 正式版的 HTML 已預先渲染（scripts/prerender.js），直接接手；開發模式則是空的
+if (container.hasChildNodes()) {
+  hydrateRoot(container, app)
+} else {
+  createRoot(container).render(app)
+}

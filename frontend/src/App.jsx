@@ -420,7 +420,8 @@ function Contact() {
         </form>
       </div>
       <footer className="footer">
-        <div className="container">
+        {/* 年份在建置時預先渲染，跨年後會跟瀏覽器算出的不同 */}
+        <div className="container" suppressHydrationWarning>
           © {new Date().getFullYear()} {site.name}・為在地小店打造的網站設計
         </div>
       </footer>
